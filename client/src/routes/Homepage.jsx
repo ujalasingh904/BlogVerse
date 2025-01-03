@@ -6,15 +6,15 @@ import PostList from '../components/PostList'
 const Homepage = () => {
   return (
     <div className="mt-4 flex flex-col gap-4">
-      {/* BREADCRUMB */}
+       
       <div className="flex gap-4">
         <Link to="/">Home</Link>
         <span>•</span>
         <span className="text-blue-800">Blogs and Articles</span>
       </div>
-      {/* INTRODUCTION */}
+       
       <div className="flex items-center justify-between">
-        {/* titles */}
+         
         <div className="">
           <h1 className="text-gray-800 text-2xl md:text-5xl lg:text-6xl font-bold">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -24,14 +24,14 @@ const Homepage = () => {
             rerum accusantium.
           </p>
         </div>
-        {/* animated button */}
+         
         <Link to="write" className="hidden md:block relative">
           <svg
             viewBox="0 0 200 200"
             width="200"
             height="200"
             className="text-lg tracking-widest animate-spin animatedButton"
-            // className="text-lg tracking-widest"
+             
           >
             <path
               id="circlePath"
@@ -63,11 +63,11 @@ const Homepage = () => {
           </button>
         </Link>
       </div>
-      {/* CATEGORIES */}
+       
       <MainCategories />
-      {/* FEATURED POSTS */}
+       
       <FeaturesPosts />
-      {/* POST LIST */}
+       
       <div className="">
         <h1 className="my-8 text-2xl text-gray-600">Recent Posts</h1>
         <PostList />
