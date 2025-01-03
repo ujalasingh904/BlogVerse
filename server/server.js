@@ -45,7 +45,6 @@ app.use((error, req, res, next) => {
   });  
 });
 
-
 app.listen(5000, () => {
   connectDB();
   console.log(`Server running on port 5000`);
